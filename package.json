@@ -1,5 +1,5 @@
 {
-  "name": "Prime Wheel Application",
+  "name": "prime_wheel",
   "version": "1.0.0",
   "main": "dist-electron/main/index.js",
   "description": "Displayes an animated Prime Wheel",
