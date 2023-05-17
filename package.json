@@ -1,9 +1,9 @@
 {
-  "name": "prime_wheel",
-  "version": "2.2.0",
+  "name": "Prime Wheel Application",
+  "version": "1.0.0",
   "main": "dist-electron/main/index.js",
-  "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
+  "description": "Displayes an animated Prime Wheel",
+  "author": "Matthew Evans",
   "license": "MIT",
   "private": true,
   "debug": {
