@@ -51,6 +51,22 @@ const PrimeWheel = (props: any) => {
       wheelData.last_prime = 2
     }
   }
+
+  /*
+   * Resize canvas on window resize
+   */
+  const resizeCanvas = (canvas: any) => {
+    //const { width, height } = canvas.getBoundingClientRect()
+    const width = window.innerWidth
+    const height = window.innerHeight
+
+    if(canvas.width !== width || canvas.height !== height) {
+      canvas.width = width
+      canvas.height = height
+      return true
+    }
+    return false
+  }
   
   /*
    * Set up drawing 
@@ -64,6 +80,7 @@ const PrimeWheel = (props: any) => {
     let animationFrameId = 0
     
     const render = () => {
+      resizeCanvas(canvas)
       frameCount++
       draw(context, frameCount)
       animationFrameId = window.requestAnimationFrame(render)
