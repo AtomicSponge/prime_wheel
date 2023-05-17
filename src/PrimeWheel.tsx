@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import './PrimeWheel.scss'
 
-const PrimeWheel = props => {  
+const PrimeWheel = (props: any) => {  
   const canvasRef = useRef(null)
 
   /*

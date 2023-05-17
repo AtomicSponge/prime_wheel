@@ -1,7 +1,13 @@
 import React from "react"
 import "./Sidebar.scss"
 
-const Sidebar = ({ width, height, children }) => {
+interface StateChanger {
+  width: any,
+  height: any,
+  children?: any
+}
+
+const Sidebar = ({ width, height, children }:StateChanger) => {
   const [xPosition, setX] = React.useState(-width)
 
   const toggleMenu = () => {
