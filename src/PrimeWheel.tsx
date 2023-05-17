@@ -56,7 +56,6 @@ const PrimeWheel = (props: any) => {
    * Resize canvas on window resize
    */
   const resizeCanvas = (canvas: any) => {
-    //const { width, height } = canvas.getBoundingClientRect()
     const width = window.innerWidth
     const height = window.innerHeight
 
