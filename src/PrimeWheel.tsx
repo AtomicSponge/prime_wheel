@@ -20,7 +20,7 @@ const PrimeWheel = props => {
   /*
    * Check for prime numbers
    */
-  const isPrime = (num) => {
+  const isPrime = (num: number) => {
     for(var i = 2; i < num; i++) {
         if(num % i == 0) return false
     }
@@ -30,7 +30,7 @@ const PrimeWheel = props => {
   /*
    * Draw the prime wheel
    */
-  const draw = (ctx, frameCount) => {
+  const draw = (ctx: any, frameCount: number) => {
     //  Prime number found, draw it using cartesian coordinates
     if(isPrime(wheelData.last_prime)) {
       ctx.font = wheelData.size + " " + wheelData.font
